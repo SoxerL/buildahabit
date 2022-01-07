@@ -1,5 +1,5 @@
 package net.ddns.buildahabit.domain;
 
 public class Role {
-	// TODO
+	// TODO define user roles
 }
