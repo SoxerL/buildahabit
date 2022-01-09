@@ -37,6 +37,14 @@ public class Habit {
 		this.description = description;
 	}
 
+	public Habit(Long id, String name, HabitRecurrence recurrence, String description) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.recurrence = recurrence;
+		this.description = description;
+	}
+
 	public long getId() {
 		return id;
 	}
@@ -55,6 +63,14 @@ public class Habit {
 
 	public void setDescription(String newDescription) {
 		this.description = newDescription;
+	}
+
+	public HabitRecurrence getRecurrence() {
+		return this.recurrence;
+	}
+
+	public void setRecurrence(HabitRecurrence recurrence) {
+		this.recurrence = recurrence;
 	}
 
 	@Override

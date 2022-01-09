@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 // TODO safety checks and error handling
 
 @RestController
-@RequestMapping("/api/habit")
+@RequestMapping("/api/v1/habit")
 public class HabitController {
     @Autowired
     private HabitRepository habitRepository;
@@ -26,12 +26,12 @@ public class HabitController {
         return habitRepository.findAll();
     }
 
-    @GetMapping("/name/{habitName}")
+    @GetMapping("name/{habitName}")
     public List<Habit> findByName(@PathVariable String habitName) {
         return habitRepository.findByName(habitName);
     }
 
-    @GetMapping("/recurrence/{habitRecurrence}")
+    @GetMapping("recurrence/{habitRecurrence}")
     public List<Habit> findByRecurrence(@PathVariable HabitRecurrence habitRecurrence) {
         return habitRepository.findByRecurrence(habitRecurrence);
     }

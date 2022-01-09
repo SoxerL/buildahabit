@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-BuildahabitApplication<buildahabit>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "net.ddns.buildahabit.BuildahabitApplication",
+            "projectName": "buildahabit",
+            "args": ""
+        }
+    ]
+}
