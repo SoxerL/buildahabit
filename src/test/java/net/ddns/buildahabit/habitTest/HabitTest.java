@@ -26,7 +26,7 @@ public class HabitTest {
         Object habit = new Habit();
         assertTrue(habit instanceof Habit);
         Habit emptyHabit = (Habit) habit;
-        assertNull(emptyHabit.getId());
+        assertEquals(0, emptyHabit.getId());
         assertNull(emptyHabit.getName());
         assertNull(emptyHabit.getDescription());
         assertNull(emptyHabit.getRecurrence());
@@ -38,7 +38,7 @@ public class HabitTest {
                     for(String description : descriptionList) {
                         Habit habitA = new Habit(name, recurrence, description);
                         Habit habitB = new Habit(id, name, recurrence, description);
-                        assertNull(habitA.getId());
+                        assertEquals(0, habitA.getId());
                         assertEquals(name, habitA.getName());
                         assertEquals(recurrence, habitA.getRecurrence());
                         assertEquals(description, habitA.getDescription());
